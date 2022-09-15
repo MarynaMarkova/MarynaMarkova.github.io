@@ -162,7 +162,7 @@ section {
   pointer-events: none;
 }
 
-.theme-btn {
+.theme-btn, .blog-go-home {
   top: 5%;
   right: 2.6%;
   width: 70px;
