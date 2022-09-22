@@ -943,7 +943,38 @@ font-weight: bold;}
 .blog-h2 {
   color: var(--color-secondary);
   text-align: center;
+  margin: 4rem auto 3rem auto;
 }
+
+.cheatsheet {
+text-align: right;}
+
+.blog-table {
+  margin: 4rem auto;
+border: 1px solid;
+border-radius: 5px;
+}
+
+th {
+padding: 1rem;}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--color-grey-4);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--color-grey-5);
+}
+
+tbody tr {
+  background-image: url(noise.png);
+}
+
+table {
+  background-color: var(--color-grey-5);
+}
+
+
 
 iframe {
   display: block;
