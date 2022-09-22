@@ -25,18 +25,278 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="thanks">
-      <div class="main-title">
-        <h2>My <span>blog</span><span class="bg-text">blog</span></h2>
-      </div>
-      <h1>
-        Six Sorting Algorithms
-      </h1>  
-      <div class="blog-go-home">
-        <a href="/index.html">
+  <body class>
+    <div class="main-title">
+      <h2>My <span>blog</span><span class="bg-text">blog</span></h2>
+    </div>
+    <h1 class="blog-title">Six Sorting Algorithms</h1>
+    <div class="theme-btn">
+      <i class="fa-solid fa-circle-half-stroke"></i>
+    </div>
+    <div class="blog-go-home">
+      <a href="/index.html">
         <i class="fa-solid fa-house"></i>
-        </a>
+      </a>
+    </div>
+
+    <figure>
+      <img
+        src="/img/blogs/stones-sorted.jpg"
+        alt="Sorted stones"
+        class="blog-img"
+      />
+      <figcaption>
+        <div class="unsplash">
+          Photo by
+          <a
+            href="https://unsplash.com/es/@martinsanchez?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            target="_blank"
+            >Martin Sanchez</a
+          >
+          on
+          <a
+            href="https://unsplash.com/s/photos/small-medium-big?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            target="_blank"
+            >Unsplash</a
+          >
         </div>
-    </body>
+      </figcaption>
+    </figure>
+
+    <article class="blog-article">
+      <p>
+        <strong>Bubble Sort</strong>, <strong> Insertion Sort </strong>and
+        <strong> Selection Sort </strong>are elementary sorting algorithms, also
+        called “quadratic”, because the time complexity of all of them is
+        O(n<sup>2</sup>) — in the worst case. It is not actually that good, but
+        they do excel in particular cases when the data sets are small.
+      </p>
+      <h2 class="blog-h2">Bubble Sort</h2>
+      <p>
+        In a
+        <a
+          href="https://github.com/MarynaMarkova/Algorithms-Colt-Steele-Course/blob/main/Algorithms/Sort_Bubble%20Sort.js"
+          target="_blank"
+          title="Bubble Sort code"
+        >
+          Bubble Sort</a
+        >
+        the largest values
+        <a
+          href="https://visualgo.net/en/sorting?slide=1"
+          target="_blank"
+          title="Bubble Sort practice"
+          >“bubble up”</a
+        >
+        to the top (to the end of an array).
+      </p>
+      <div>
+        <iframe
+          src="https://www.youtube.com/embed?v=Cq7SMsQBEUw&list=PLZh3kxyHrVp_AcOanN_jpuQbcMVdXbqei&index=7&ab_channel=TimoBingmann"
+          frameborder="0"
+          allowfullscreen="yes"
+        ></iframe>
+      </div>
+      <h2 class="blog-h2">Insertion Sort</h2>
+      <p>
+        An
+        <a
+          href="https://github.com/MarynaMarkova/Algorithms-Colt-Steele-Course/blob/main/Algorithms/Sort_Insertion.js"
+          target="_blank"
+          title="Insertion Sort code"
+          >Insertion Sort</a
+        >
+        gradually creates a
+        <a
+          href="https://visualgo.net/en/sorting"
+          target="_blank"
+          title="Insertion Sort practice"
+          >larger left half</a
+        >
+        which is always sorted.
+      </p>
+      <div>
+        <iframe
+          src="https://www.youtube.com/embed/videoseries?list=PLZh3kxyHrVp_AcOanN_jpuQbcMVdXbqei"
+          frameborder="0"
+          allowfullscreen="yes"
+        ></iframe>
+      </div>
+      <h2 class="blog-h2">Selection Sort</h2>
+      <p>
+        A
+        <a
+          href="https://github.com/MarynaMarkova/Algorithms-Colt-Steele-Course/blob/main/Algorithms/Sort_Selection.js"
+          target="_blank"
+          title="Selection Sort code"
+          >Selection Sort</a
+        >
+        places
+        <a
+          href="https://visualgo.net/en/sorting"
+          target="_blank"
+          title="Selection Sort practice"
+          >small values
+        </a>
+        into sorted position.
+      </p>
+      <div>
+        <iframe
+          src="https://www.youtube.com/embed?v=92BfuxHn2XE&list=PLZh3kxyHrVp_AcOanN_jpuQbcMVdXbqei&index=11&ab_channel=TimoBingmann"
+          frameborder="0"
+          allowfullscreen="yes"
+        ></iframe>
+      </div>
+      <p>
+        These three sorting algorithms are roughly equivalent, but they differ
+        in the best cases: <strong>Bubble Sort</strong> performs very well with
+        almost sorted data, because it has to do very little swaps. The same
+        thing with an <strong>Insertion Sort</strong>: we iterate through the
+        loop once doing one comparison for each item if the data is totally
+        sorted — it's very good if you have streaming data that has to be sorted
+        live. <strong>Selection Sort</strong>, however, doesn’t fare so well
+        (but it’s easy to understand 😉).
+      </p>
+      <p>
+        As for a <strong>Space Complexity</strong>, they all perform quite well
+        — it’s just O(1), because we’re not really using much space in these
+        algorithms, everything is happening in place, without creating new
+        arrays.
+      </p>
+      <h2 class="blog-h2">Merge Sort</h2>
+      <p>
+        <a
+          href="https://github.com/MarynaMarkova/Algorithms-Colt-Steele-Course/blob/main/Algorithms/Sort_Merge.js"
+          target="_blank"
+          title="Merge Sort code"
+        >
+          Merge Sort
+        </a>
+
+        decomposes an array into
+        <a
+          href="https://visualgo.net/en/sorting"
+          target="_blank"
+          title="Merge Sort practice"
+          >smaller arrays</a
+        >
+        of 0 or 1 element, then it builds up a newly sorted array. As for
+        <strong>Time Complexity</strong>, the best, the worst and the average
+        cases are the same.
+      </p>
+      <div>
+        <iframe
+          src="https://www.youtube.com/embed?v=ZRPoEKHXTJg&list=PLZh3kxyHrVp_AcOanN_jpuQbcMVdXbqei&index=5&ab_channel=TimoBingmann"
+          frameborder="0"
+          allowfullscreen="yes"
+        ></iframe>
+      </div>
+      <p>
+        This <strong>Time Complexity</strong> is the best we can get for
+        data-agnostic sorting algorithm (in other case we can take advantage of
+        some weird quirk in the data). As for the
+        <strong> Space Complexity </strong>, it’s bigger than in previous
+        algorithms, because as we have a larger array, we have to store more
+        arrays.
+      </p>
+
+      <h2 class="blog-h2">Quick Sort</h2>
+      <p>
+        <a
+          href="https://github.com/MarynaMarkova/Algorithms-Colt-Steele-Course/blob/main/Algorithms/Sort_Quick.js"
+          target="_blank"
+          title="Quick Sort code"
+          >Quick Sort</a
+        >
+        selects one
+        <a
+          href="https://visualgo.net/en/sorting"
+          target="_blank"
+          title="Quick Sort practice"
+          >“pivot” element</a
+        >
+        and finds the index where the pivot should end up. Then the algorithm
+        can be applied on either side of the pivot.
+      </p>
+      <p>
+        When data is already sorted or almost sorted is the worst scenario for
+        this algorithm. To avoid it (or at least try to avoid it) in case of
+        sorted arrays it's better to pick pivot from the middle or any random
+        number of the array.
+      </p>
+      <div>
+        <iframe
+          src="https://www.youtube.com/embed?v=8hEyhs3OV1w&list=PLZh3kxyHrVp_AcOanN_jpuQbcMVdXbqei&index=2&ab_channel=TimoBingmann"
+          frameborder="0"
+          allowfullscreen="yes"
+        ></iframe>
+      </div>
+
+      <h2 class="blog-h2">Radix Sort</h2>
+      <p>
+        <a
+          href="https://github.com/MarynaMarkova/Algorithms-Colt-Steele-Course/blob/main/Algorithms/Sort_Radix.js"
+          target="_blank"
+          title="Radix Sort code"
+          >Radix Sort</a
+        >
+        works only on
+        <a
+          href="https://visualgo.net/en/sorting"
+          target="_blank"
+          title="Radix Sort practice"
+          >lists of numbers</a
+        >. It exploits the fact that information about the size of a number is
+        encoded in the number of digits. Theoretically, it can be faster than
+        any of the comparison sorts.
+      </p>
+
+      <div>
+        <iframe
+          src="https://www.youtube.com/embed?v=LyRWppObda4&list=PLZh3kxyHrVp_AcOanN_jpuQbcMVdXbqei&index=12&ab_channel=TimoBingmann"
+          frameborder="0"
+          allowfullscreen="yes"
+        ></iframe>
+      </div>
+
+      <p>
+        Now let's compare these
+        <a
+          href="https://www.toptal.com/developers/sorting-algorithms"
+          target="_blank"
+          title="Sorting Algorithms animation"
+          >Sorting Algorithms</a
+        >
+        in real time!
+      </p>
+      <p>
+        Need cheatsheet on Big O?
+        <a
+          href="https://www.bigocheatsheet.com"
+          target="_blank"
+          title="Big O Cheat Sheet"
+          >Here it comes!</a
+        >
+      </p>
+      <div class="blog-footer">
+        This article is based on the
+        <a
+          href="https://www.youtube.com/c/ColtSteeleCode"
+          target="_blank"
+          title="Colt Steele's YouTube channel"
+          >Colt Steele's</a
+        >
+        Udemy course
+        <a
+          href="https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass"
+          target="_blank"
+          title="Udemy Course"
+          >"JavaScript Algorithms and Data Structures Masterclass",</a
+        > </br>which I highly recommend to anyone who is interested in Algorithm
+        studying — Colt is a wonderful teacher, </br>one of my favorite ever!
+      </div>
+    </article>
+
+    <script src="/blogs/app2.js"></script>
   </body>
 </html>
