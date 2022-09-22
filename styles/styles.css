@@ -966,10 +966,6 @@ tbody tr:nth-child(even) {
   background-color: var(--color-grey-5);
 }
 
-tbody tr {
-  background-image: url(noise.png);
-}
-
 table {
   background-color: var(--color-grey-5);
 }
