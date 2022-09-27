@@ -696,6 +696,9 @@ border-radius: 10px;
 box-shadow: var(--box-shadow-1);
 }
 
+.sort {
+margin-bottom: 40px;}
+
 figcaption {
   display: block;
   text-align: right;
@@ -969,8 +972,6 @@ tbody tr:nth-child(even) {
 table {
   background-color: var(--color-grey-5);
 }
-
-
 
 iframe {
   display: block;
